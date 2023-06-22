@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>enter passcode</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Passcode</h1>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+    <div id="result"></div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            var result = document.getElementById("result");
+            
+            switch (password) {
+                case "6969":
+                    result.textContent = "madaari";
+                    break;
+                case "love":
+                    result.textContent = "s*j*l";
+                    break;
+                case "f69k":
+                    result.textContent = "mavoo!";
+                    break;
+                case "nigga":
+                    result.textContent = "Are you searching for vijay or mavoo!?";
+                    break;
+                case "god":
+                    result.textContent = "Why are you searching for me, man?";
+                    break;
+                default:
+                    result.textContent = "Invalid password";
+            }
+        }
+    </script>
+</body>
+</html>
